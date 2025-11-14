@@ -1,0 +1,32 @@
+
+:root{
+  --bg:#1f2528;
+  --card:#2a2f31;
+  --accent:#6b3db3;
+  --text:#e8e8e8;
+  --muted:#a8a8a8;
+  --container-w:900px;
+}
+
+*{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+body{margin:0;background:linear-gradient(180deg,var(--bg),#101214);color:var(--text);display:flex;flex-direction:column;align-items:center;min-height:100vh;padding:24px;}
+.site-header{width:100%;max-width:var(--container-w);background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;display:flex;align-items:center;margin-bottom:14px;}
+.brand{display:flex;align-items:center;gap:16px;}
+.logo{width:110px;height:110px;object-fit:contain;border-radius:8px;background:rgba(0,0,0,0.25);padding:8px;}
+.titles h1{margin:0;font-size:20px;letter-spacing:1px;}
+.subtitle{margin:2px 0 0 0;color:var(--muted);font-size:13px}
+
+.toc{width:100%;max-width:var(--container-w);display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 18px;}
+.toc a{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14px;}
+
+.content{width:100%;max-width:var(--container-w);background:var(--card);padding:22px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.6);}
+.content section{margin-bottom:20px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.03)}
+.content h2{margin:0 0 10px 0;color:var(--accent);}
+.content ol, .content ul{margin:0 0 0 18px;color:var(--text);}
+.content p{color:var(--muted);line-height:1.5}
+
+.site-footer{width:100%;max-width:var(--container-w);text-align:center;margin-top:12px;color:var(--muted);font-size:13px;padding:10px}
+@media (max-width:640px){
+  .logo{width:72px;height:72px}
+  .content{padding:14px}
+}
